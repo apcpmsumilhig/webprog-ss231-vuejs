@@ -6,7 +6,16 @@
   <link rel="stylesheet" href="css/flexbox-grid.css?version=0.1">  
 </head>
 <body>
+    <p>The 'message' text from the Vue instance is put together with another text and a JavaScript expression. The JavaScript expression creates a random integer between 1 and 6.</p>
 
+    <div id="app">
+      {{ message }} <br>
+      {{'Random number: ' + Math.ceil(Math.random()*6) }}
+    </div>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/vue.js"></script>
+    
   <div class="container">
     <header>
         <h1>Personal Profile Web page </h1>
@@ -76,15 +85,7 @@
 </body>
 </html>
 
-<p>The 'message' text from the Vue instance is put together with another text and a JavaScript expression. The JavaScript expression creates a random integer between 1 and 6.</p>
 
-<div id="app">
-  {{ message }} <br>
-  {{'Random number: ' + Math.ceil(Math.random()*6) }}
-</div>
-
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="js/vue.js"></script>
 
 </body>
 </html>
