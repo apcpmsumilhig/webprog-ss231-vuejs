@@ -15,4 +15,3 @@ const app2 = Vue.createApp({
    })
    
    app2.mount('#app2')
- 
