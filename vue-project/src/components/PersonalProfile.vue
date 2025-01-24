@@ -1,4 +1,5 @@
 <template>
+    <div>
 <header class = "header">
     <div class = "header-holder">
       <div class = "header-text">
@@ -158,6 +159,7 @@
     <br>
     Inspiration: <a href= "http://jpcs.apc.education" class="footerLink"> jpcs.apc.education</a> </h4>
   </footer>
+  </div>
 </template>
 
 <script></script>
