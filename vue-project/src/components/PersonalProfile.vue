@@ -1,47 +1,5 @@
 <template>
-  <div class="personalprofile">
-    <!-- Header Tab -->
-    <header class="header">
-      <div class="header-holder">
-        <div class="header-text">
-          <h1>Personal Profile Web page</h1>
-        </div>
-        <div class="header-tabs">
-          <div class="tab"><h3><a href="">About Me</a></h3></div>
-          <div class="tab"><h3><a href="gallery">Picture Gallery</a></h3></div>
-          <div class="tab"><h3><a href="">Contact Me!</a></h3></div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Profile Section -->
-    <section class="profile">
-      <div class="profile-holder">
-        <div class="profile-container">
-          <div class="picture">
-            <img src="css/assets/profile.jpeg" id="profile-picture" />
-          </div>
-          <div class="intro">
-            <h3>Hi I'm Paul Brian Sumilhig!</h3>
-          </div>
-          <div class="profile-description">
-            <h5>And you can find me here!</h5>
-          </div>
-          <div class="socials-container">
-            <div class="socials-tab">
-              <a href="https://www.linkedin.com/in/paul-brian-sumilhig-531643320/" target="_blank">LinkedIn</a>
-            </div>
-            <div class="socials-tab">
-              <a href="https://github.com/apcpmsumilhig" target="_blank">GitHub</a>
-            </div>
-            <div class="socials-tab">
-              <a href="https://www.facebook.com/normally.pol" target="_blank">Facebook</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+  <div>
     <!-- Main Content -->
     <div class="container">
       <main>
@@ -113,37 +71,6 @@
         </section>
       </main>
 
-      <div class="comments">
-        <div id="app3">
-          <form @submit.prevent="sendComment">
-            <p>
-              What would you like to say?<br />
-              <input type="text" required placeholder="Type it here" v-model="commentText" />
-            </p>
-            <button type="submit">Send Comment</button>
-          </form>
-          <br />
-
-          <div class="comment-list">
-            <ul class="comment-list">
-              <li class="comment-item" v-for="comment in commentPlace" :key="comment.name" v-show="!comment.found">
-                {{ comment.name }}
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Footer -->
-      <footer>
-        <h4>
-          Asia Pacific College WEBPROG SS231
-          <br /><br />
-          Developed by Paul Brian Sumilhig
-          <br />
-          Inspiration: <a href="http://jpcs.apc.education" class="footerLink">jpcs.apc.education</a>
-        </h4>
-      </footer>
     </div>
   </div>
 </template>
