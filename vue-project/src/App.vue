@@ -1,31 +1,13 @@
-<script setup>
-import { ref, onMounted } from 'vue'
-import { supabase } from './lib/supabaseClient'
-
-const countries = ref([])
-
-async function getCountries() {
-  const { data } = await supabase.from('countries').select()
-  countries.value = data
-}
-
-onMounted(() => {
-  getCountries()
-})
-</script>
-
 <template>
-
-  <ul>
-    <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
-  </ul>
-
   <h1>Food</h1>
-  <food-item/> <br>
-  <food-item2/> <br>
-  <personal-profile/>
+  <country/>
+  <food-item/>
+  <food-item/>
+  <food-item/>
+  <comment-form/>
+  <comment/>
+   
+
 </template>
 
-
-
-<style></style>
+<script></script>
