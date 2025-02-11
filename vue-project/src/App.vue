@@ -26,6 +26,7 @@
   <food-item2/>
   <food-item/> 
   <food-item2/> 
+  <h1>restAPI</h1>
   <rest-api/> 
 </template>
 
